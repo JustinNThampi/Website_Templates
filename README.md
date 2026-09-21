@@ -135,9 +135,9 @@ Depending on the template, features may include:
 Fullstack Software Engineer
 UAE
 
-* 🌐 Portfolio: [JustinNThampi.com](https://JustinNThampi.com)
-* 💼 LinkedIn: [linkedin.com/in/JustinNThampi](https://linkedin.com/in/JustinNThampi)
-* 💻 GitHub: [github.com/JustinNThampi](https://github.com/JustinNThampi)
+* 🌐 Portfolio: [JustinNThampi.com]([https://JustinNThampi.com](https://justinnthampi.github.io/Justin-Portfolio/))
+* 💼 LinkedIn: [linkedin.com/in/JustinNThampi]([https://linkedin.com/in/JustinNThampi](https://www.linkedin.com/in/justin-n-thampi-387002302/))
+* 💻 GitHub: [github.com/JustinNThampi]([https://github.com/JustinNThampi](https://github.com/JustinNThampi))
 
 ## 📄 License
 
