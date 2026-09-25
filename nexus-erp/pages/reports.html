@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXUS ERP — Reports</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="erp-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div class="brand-text">
+          <strong>NEXUS</strong>
+          <span>ERP SYSTEM</span>
+        </div>
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+        <p class="nav-label">MAIN</p>
+
+        <a href="../index.html" class="nav-item">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="sales.html" class="nav-item">
+          <span class="nav-icon">↗</span>
+          <span>Sales</span>
+        </a>
+
+        <a href="customers.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Customers</span>
+        </a>
+
+
+        <p class="nav-label">OPERATIONS</p>
+
+        <a href="inventory.html" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Inventory</span>
+        </a>
+
+        <a href="products.html" class="nav-item">
+          <span class="nav-icon">□</span>
+          <span>Products</span>
+        </a>
+
+        <a href="purchasing.html" class="nav-item">
+          <span class="nav-icon">⇩</span>
+          <span>Purchasing</span>
+        </a>
+
+        <a href="suppliers.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Suppliers</span>
+        </a>
+
+
+        <p class="nav-label">MANAGEMENT</p>
+
+        <a href="employees.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Employees</span>
+        </a>
+
+        <a href="finance.html" class="nav-item">
+          <span class="nav-icon">$</span>
+          <span>Finance</span>
+        </a>
+
+        <a href="reports.html" class="nav-item active">
+          <span class="nav-icon">▥</span>
+          <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+          <span class="nav-icon">⚙</span>
+          <span>Settings</span>
+        </a>
+
+        <p class="nav-label-pages">UI PAGES</p>
+
+        <a href="login.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">➔</span>
+          <span>Sign In</span>
+        </a>
+
+        <a href="register.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">✚</span>
+          <span>Register</span>
+        </a>
+
+        <a href="404.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">⚠</span>
+          <span>404 Error</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-footer">
+
+        <div class="help-box">
+
+          <span class="help-icon">?</span>
+
+          <div>
+            <strong>Need Help?</strong>
+            <p>Contact support</p>
+          </div>
+
+        </div>
+
+
+        <div class="user-mini">
+
+          <div class="user-avatar">
+            JD
+          </div>
+
+          <div class="user-info">
+            <strong>John Doe</strong>
+            <span>Administrator</span>
+          </div>
+
+          <button class="user-menu">
+            ⋮
+          </button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button class="mobile-menu" id="mobileMenu">
+            ☰
+          </button>
+
+          <div class="page-heading">
+
+            <h1>Reports</h1>
+
+            <p>
+              Analyze business performance with detailed reports and insights
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              placeholder="Search reports..."
+              id="globalSearch"
+            >
+
+            <kbd>⌘ K</kbd>
+
+          </div>
+
+
+          <button class="icon-button notification-button">
+
+            🔔
+
+            <span class="notification-dot"></span>
+
+          </button>
+
+
+          <div class="profile">
+
+            <div class="profile-avatar">
+              JD
+            </div>
+
+            <div class="profile-details">
+
+              <strong>John Doe</strong>
+
+              <span>
+                Administrator
+              </span>
+
+            </div>
+
+            <span class="profile-arrow">
+              ⌄
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <section class="dashboard-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="welcome-section">
+
+          <div>
+
+            <h2>Business Reports</h2>
+
+            <p>
+              Generate, review and export reports across your organization.
+            </p>
+
+          </div>
+
+
+          <div class="page-actions">
+
+            <button class="secondary-button">
+              ↓ Export
+            </button>
+
+            <button class="secondary-button">
+              Schedule Report
+            </button>
+
+            <button class="primary-button">
+              + Create Report
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= REPORT STATS ================= -->
+
+        <div class="stats-grid">
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon revenue-icon">
+                $
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Revenue</p>
+
+              <h3>AED 84,250</h3>
+
+              <span class="stat-change positive">
+                ↑ 12.5%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon sales-icon">
+                ↗
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Sales</p>
+
+              <h3>AED 62,480</h3>
+
+              <span class="stat-change positive">
+                ↑ 8.2%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon orders-icon">
+                #
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Orders</p>
+
+              <h3>248</h3>
+
+              <span class="stat-change positive">
+                ↑ 6.4%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon expenses-icon">
+                ✓
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Net Profit</p>
+
+              <h3>AED 62,570</h3>
+
+              <span class="stat-change positive">
+                ↑ 15.8%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= REPORT ANALYTICS ================= -->
+
+        <div class="dashboard-grid">
+
+
+          <!-- Performance Report -->
+
+          <div class="dashboard-card revenue-chart-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Business Performance</h3>
+
+                <p>
+                  Revenue performance across the year
+                </p>
+
+              </div>
+
+
+              <select class="period-select">
+
+                <option>
+                  2026
+                </option>
+
+                <option>
+                  2025
+                </option>
+
+                <option>
+                  2024
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="chart-container">
+
+              <div class="chart-y-axis">
+
+                <span>100K</span>
+                <span>80K</span>
+                <span>60K</span>
+                <span>40K</span>
+                <span>20K</span>
+                <span>0</span>
+
+              </div>
+
+
+              <div class="chart-area">
+
+                <div class="chart-grid-lines">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+
+                <div class="chart-placeholder">
+
+                  <div class="chart-line"></div>
+
+                </div>
+
+
+                <div class="chart-months">
+
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                  <span>Dec</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Report Categories -->
+
+          <div class="dashboard-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Report Categories</h3>
+
+                <p>
+                  Available business reports
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="sales-breakdown">
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot completed-dot"></span>
+
+                  <span>
+                    Sales Reports
+                  </span>
+
+                </div>
+
+                <strong>
+                  18
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 82%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Financial Reports
+                  </span>
+
+                </div>
+
+                <strong>
+                  14
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 65%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot overdue-dot"></span>
+
+                  <span>
+                    Inventory Reports
+                  </span>
+
+                </div>
+
+                <strong>
+                  12
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 56%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot completed-dot"></span>
+
+                  <span>
+                    Employee Reports
+                  </span>
+
+                </div>
+
+                <strong>
+                  9
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 43%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Customer Reports
+                  </span>
+
+                </div>
+
+                <strong>
+                  7
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 34%;"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= QUICK REPORTS ================= -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>Quick Reports</h3>
+
+              <p>
+                Generate commonly used business reports
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="low-stock-grid">
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                $
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Sales Summary
+                </strong>
+
+                <span>
+                  Revenue, orders and sales performance
+                </span>
+
+              </div>
+
+              <button class="secondary-button">
+                Generate
+              </button>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                #
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Inventory Report
+                </strong>
+
+                <span>
+                  Stock levels, value and movements
+                </span>
+
+              </div>
+
+              <button class="secondary-button">
+                Generate
+              </button>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                %
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Profit & Loss
+                </strong>
+
+                <span>
+                  Revenue, expenses and net profit
+                </span>
+
+              </div>
+
+              <button class="secondary-button">
+                Generate
+              </button>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                ♙
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Employee Report
+                </strong>
+
+                <span>
+                  Workforce, departments and attendance
+                </span>
+
+              </div>
+
+              <button class="secondary-button">
+                Generate
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= REPORT HISTORY ================= -->
+
+        <div class="dashboard-card sales-table-card">
+
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>Recent Reports</h3>
+
+              <p>
+                Recently generated business reports
+              </p>
+
+            </div>
+
+
+            <button class="secondary-button">
+              View All
+            </button>
+
+          </div>
+
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <thead>
+
+                <tr>
+
+                  <th>Report</th>
+                  <th>Category</th>
+                  <th>Generated By</th>
+                  <th>Date</th>
+                  <th>Format</th>
+                  <th>Status</th>
+                  <th>Action</th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+
+                <tr>
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        SR
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Monthly Sales Report
+                        </strong>
+
+                        <span>
+                          September 2026
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Sales
+                  </td>
+
+                  <td>
+                    John Doe
+                  </td>
+
+                  <td>
+                    23 Sep 2026
+                  </td>
+
+                  <td>
+                    PDF
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Ready
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ↓
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        PL
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Profit & Loss Statement
+                        </strong>
+
+                        <span>
+                          Q3 2026
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Finance
+                  </td>
+
+                  <td>
+                    Sarah Ali
+                  </td>
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+                  <td>
+                    Excel
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Ready
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ↓
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        IR
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Inventory Valuation
+                        </strong>
+
+                        <span>
+                          September 2026
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Inventory
+                  </td>
+
+                  <td>
+                    Michael Khan
+                  </td>
+
+                  <td>
+                    21 Sep 2026
+                  </td>
+
+                  <td>
+                    PDF
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Ready
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ↓
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        CR
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Customer Receivables
+                        </strong>
+
+                        <span>
+                          September 2026
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Customers
+                  </td>
+
+                  <td>
+                    John Doe
+                  </td>
+
+                  <td>
+                    20 Sep 2026
+                  </td>
+
+                  <td>
+                    Excel
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge pending">
+                      Processing
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        ER
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Employee Directory
+                        </strong>
+
+                        <span>
+                          Current workforce
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+                  <td>
+                    Employees
+                  </td>
+
+                  <td>
+                    Lina Mathew
+                  </td>
+
+                  <td>
+                    19 Sep 2026
+                  </td>
+
+                  <td>
+                    PDF
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Ready
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ↓
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <div class="table-footer">
+
+            <span>
+              Showing 1–5 of 48 reports
+            </span>
+
+
+            <div class="pagination">
+
+              <button disabled>
+                ←
+              </button>
+
+              <button class="active">
+                1
+              </button>
+
+              <button>
+                2
+              </button>
+
+              <button>
+                3
+              </button>
+
+              <button>
+                4
+              </button>
+
+              <span>
+                ...
+              </span>
+
+              <button>
+                10
+              </button>
+
+              <button>
+                →
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

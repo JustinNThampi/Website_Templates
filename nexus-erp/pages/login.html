@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS ERP — Sign In</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-body">
+
+  <div class="auth-container">
+    <div class="auth-card">
+
+      <div class="auth-header">
+        <a href="../index.html" class="auth-logo">
+          <div class="brand-icon">N</div>
+          <div class="auth-logo-text">
+            <strong>NEXUS</strong>
+            <span>ERP SYSTEM</span>
+          </div>
+        </a>
+
+        <h1>Welcome back</h1>
+        <p>Enter your credentials to access your ERP workspace</p>
+      </div>
+
+      <form class="auth-form" id="loginForm">
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="admin@nexuserp.com"
+            value="admin@nexuserp.com"
+            required
+            autocomplete="email"
+          >
+        </div>
+
+        <div class="form-group">
+          <div class="auth-form-row">
+            <label for="password">Password</label>
+            <a href="forgot-password.html" class="auth-link">Forgot password?</a>
+          </div>
+          <input
+            type="password"
+            id="password"
+            placeholder="••••••••••••"
+            value="nexusadmin2026"
+            required
+            autocomplete="current-password"
+          >
+        </div>
+
+        <div class="auth-form-row">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--text-secondary);">
+            <input type="checkbox" checked>
+            <span>Remember this device for 30 days</span>
+          </label>
+        </div>
+
+        <button type="submit" class="primary-button auth-submit-btn" id="signInBtn">
+          Sign In to Nexus ERP →
+        </button>
+
+        <div class="demo-credentials-card">
+          <strong>Demo Administrator Credentials:</strong>
+          <span>Email: <code>admin@nexuserp.com</code></span>
+          <span>Password: <code>nexusadmin2026</code></span>
+        </div>
+      </form>
+
+      <div class="auth-footer">
+        Don't have an enterprise account?
+        <a href="register.html" class="auth-link">Create workspace</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script>
+    document.getElementById("loginForm")?.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const btn = document.getElementById("signInBtn");
+      btn.textContent = "Authenticating...";
+      btn.disabled = true;
+
+      setTimeout(() => {
+        showToast("Access Granted", "Redirecting to Dashboard...", "success");
+        setTimeout(() => {
+          window.location.href = "../index.html";
+        }, 800);
+      }, 700);
+    });
+  </script>
+</body>
+</html>

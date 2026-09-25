@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXUS ERP — Settings</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="erp-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div class="brand-text">
+          <strong>NEXUS</strong>
+          <span>ERP SYSTEM</span>
+        </div>
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+        <p class="nav-label">MAIN</p>
+
+        <a href="../index.html" class="nav-item">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="sales.html" class="nav-item">
+          <span class="nav-icon">↗</span>
+          <span>Sales</span>
+        </a>
+
+        <a href="customers.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Customers</span>
+        </a>
+
+
+        <p class="nav-label">OPERATIONS</p>
+
+        <a href="inventory.html" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Inventory</span>
+        </a>
+
+        <a href="products.html" class="nav-item">
+          <span class="nav-icon">□</span>
+          <span>Products</span>
+        </a>
+
+        <a href="purchasing.html" class="nav-item">
+          <span class="nav-icon">⇩</span>
+          <span>Purchasing</span>
+        </a>
+
+        <a href="suppliers.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Suppliers</span>
+        </a>
+
+
+        <p class="nav-label">MANAGEMENT</p>
+
+        <a href="employees.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Employees</span>
+        </a>
+
+        <a href="finance.html" class="nav-item">
+          <span class="nav-icon">$</span>
+          <span>Finance</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+          <span class="nav-icon">▥</span>
+          <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item active">
+          <span class="nav-icon">⚙</span>
+          <span>Settings</span>
+        </a>
+
+        <p class="nav-label-pages">UI PAGES</p>
+
+        <a href="login.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">➔</span>
+          <span>Sign In</span>
+        </a>
+
+        <a href="register.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">✚</span>
+          <span>Register</span>
+        </a>
+
+        <a href="404.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">⚠</span>
+          <span>404 Error</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-footer">
+
+        <div class="help-box">
+
+          <span class="help-icon">?</span>
+
+          <div>
+            <strong>Need Help?</strong>
+            <p>Contact support</p>
+          </div>
+
+        </div>
+
+
+        <div class="user-mini">
+
+          <div class="user-avatar">
+            JD
+          </div>
+
+          <div class="user-info">
+
+            <strong>John Doe</strong>
+
+            <span>
+              Administrator
+            </span>
+
+          </div>
+
+          <button class="user-menu">
+            ⋮
+          </button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button class="mobile-menu" id="mobileMenu">
+            ☰
+          </button>
+
+          <div class="page-heading">
+
+            <h1>Settings</h1>
+
+            <p>
+              Manage your organization, account and system preferences
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              placeholder="Search settings..."
+              id="globalSearch"
+            >
+
+            <kbd>⌘ K</kbd>
+
+          </div>
+
+
+          <button class="icon-button notification-button">
+
+            🔔
+
+            <span class="notification-dot"></span>
+
+          </button>
+
+
+          <div class="profile">
+
+            <div class="profile-avatar">
+              JD
+            </div>
+
+            <div class="profile-details">
+
+              <strong>John Doe</strong>
+
+              <span>
+                Administrator
+              </span>
+
+            </div>
+
+            <span class="profile-arrow">
+              ⌄
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <section class="dashboard-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="welcome-section">
+
+          <div>
+
+            <h2>System Settings</h2>
+
+            <p>
+              Configure your organization and NEXUS ERP preferences.
+            </p>
+
+          </div>
+
+
+          <div class="page-actions">
+
+            <button class="secondary-button">
+              Cancel
+            </button>
+
+            <button class="primary-button">
+              Save Changes
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= SETTINGS LAYOUT ================= -->
+
+        <div class="settings-layout">
+
+
+          <!-- SETTINGS NAVIGATION -->
+
+          <aside class="settings-menu">
+
+            <a href="#general" class="settings-menu-item active">
+              <span>⚙</span>
+              <div>
+                <strong>General</strong>
+                <small>Organization settings</small>
+              </div>
+            </a>
+
+
+            <a href="#profile" class="settings-menu-item">
+              <span>♙</span>
+              <div>
+                <strong>My Profile</strong>
+                <small>Personal information</small>
+              </div>
+            </a>
+
+
+            <a href="#users" class="settings-menu-item">
+              <span>♧</span>
+              <div>
+                <strong>Users & Roles</strong>
+                <small>Access and permissions</small>
+              </div>
+            </a>
+
+
+            <a href="#notifications" class="settings-menu-item">
+              <span>🔔</span>
+              <div>
+                <strong>Notifications</strong>
+                <small>Email and system alerts</small>
+              </div>
+            </a>
+
+
+            <a href="#security" class="settings-menu-item">
+              <span>🔒</span>
+              <div>
+                <strong>Security</strong>
+                <small>Password and authentication</small>
+              </div>
+            </a>
+
+
+            <a href="#appearance" class="settings-menu-item">
+              <span>◐</span>
+              <div>
+                <strong>Appearance</strong>
+                <small>Interface preferences</small>
+              </div>
+            </a>
+
+
+            <a href="#integrations" class="settings-menu-item">
+              <span>⌘</span>
+              <div>
+                <strong>Integrations</strong>
+                <small>Connected services</small>
+              </div>
+            </a>
+
+
+            <a href="#billing" class="settings-menu-item">
+              <span>$</span>
+              <div>
+                <strong>Billing</strong>
+                <small>Subscription and invoices</small>
+              </div>
+            </a>
+
+          </aside>
+
+
+          <!-- SETTINGS CONTENT -->
+
+          <div class="settings-content">
+
+
+            <!-- ================= GENERAL ================= -->
+
+            <div class="dashboard-card settings-section" id="general">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>General Settings</h3>
+
+                  <p>
+                    Basic information about your organization
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="settings-form">
+
+
+                <div class="form-row">
+
+                  <div class="form-group">
+
+                    <label>
+                      Company Name
+                    </label>
+
+                    <input
+                      type="text"
+                      value="NEXUS Technologies LLC"
+                    >
+
+                  </div>
+
+
+                  <div class="form-group">
+
+                    <label>
+                      Company ID
+                    </label>
+
+                    <input
+                      type="text"
+                      value="NEXUS-ORG-001"
+                      readonly
+                    >
+
+                  </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                  <div class="form-group">
+
+                    <label>
+                      Email Address
+                    </label>
+
+                    <input
+                      type="email"
+                      value="admin@nexuserp.com"
+                    >
+
+                  </div>
+
+
+                  <div class="form-group">
+
+                    <label>
+                      Phone Number
+                    </label>
+
+                    <input
+                      type="text"
+                      value="+971 4 123 4567"
+                    >
+
+                  </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                  <div class="form-group">
+
+                    <label>
+                      Country
+                    </label>
+
+                    <select>
+
+                      <option selected>
+                        United Arab Emirates
+                      </option>
+
+                      <option>
+                        Saudi Arabia
+                      </option>
+
+                      <option>
+                        Qatar
+                      </option>
+
+                      <option>
+                        Bahrain
+                      </option>
+
+                    </select>
+
+                  </div>
+
+
+                  <div class="form-group">
+
+                    <label>
+                      Currency
+                    </label>
+
+                    <select>
+
+                      <option selected>
+                        AED — UAE Dirham
+                      </option>
+
+                      <option>
+                        USD — US Dollar
+                      </option>
+
+                      <option>
+                        EUR — Euro
+                      </option>
+
+                    </select>
+
+                  </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label>
+                    Company Address
+                  </label>
+
+                  <textarea rows="3">Business Bay, Dubai, United Arab Emirates</textarea>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= PROFILE ================= -->
+
+            <div class="dashboard-card settings-section" id="profile">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>My Profile</h3>
+
+                  <p>
+                    Manage your personal account information
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="profile-settings">
+
+
+                <div class="large-profile-avatar">
+                  JD
+                </div>
+
+
+                <div class="profile-form">
+
+                  <div class="form-row">
+
+                    <div class="form-group">
+
+                      <label>
+                        First Name
+                      </label>
+
+                      <input
+                        type="text"
+                        value="John"
+                      >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                      <label>
+                        Last Name
+                      </label>
+
+                      <input
+                        type="text"
+                        value="Doe"
+                      >
+
+                    </div>
+
+                  </div>
+
+
+                  <div class="form-row">
+
+                    <div class="form-group">
+
+                      <label>
+                        Email
+                      </label>
+
+                      <input
+                        type="email"
+                        value="john.doe@nexuserp.com"
+                      >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                      <label>
+                        Role
+                      </label>
+
+                      <input
+                        type="text"
+                        value="Administrator"
+                        readonly
+                      >
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= USERS & ROLES ================= -->
+
+            <div class="dashboard-card settings-section" id="users">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Users & Roles</h3>
+
+                  <p>
+                    Manage system users and access permissions
+                  </p>
+
+                </div>
+
+
+                <button class="primary-button">
+                  + Add User
+                </button>
+
+              </div>
+
+
+              <div class="table-wrapper">
+
+                <table>
+
+                  <thead>
+
+                    <tr>
+
+                      <th>User</th>
+                      <th>Role</th>
+                      <th>Department</th>
+                      <th>Status</th>
+                      <th>Last Login</th>
+                      <th>Action</th>
+
+                    </tr>
+
+                  </thead>
+
+
+                  <tbody>
+
+
+                    <tr>
+
+                      <td>
+
+                        <div class="table-person">
+
+                          <div class="table-avatar">
+                            JD
+                          </div>
+
+                          <div>
+
+                            <strong>
+                              John Doe
+                            </strong>
+
+                            <span>
+                              john.doe@nexuserp.com
+                            </span>
+
+                          </div>
+
+                        </div>
+
+                      </td>
+
+                      <td>
+                        Administrator
+                      </td>
+
+                      <td>
+                        Management
+                      </td>
+
+                      <td>
+
+                        <span class="status-badge completed">
+                          Active
+                        </span>
+
+                      </td>
+
+                      <td>
+                        Just now
+                      </td>
+
+                      <td>
+                        <button class="table-action">⋮</button>
+                      </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                      <td>
+
+                        <div class="table-person">
+
+                          <div class="table-avatar">
+                            SA
+                          </div>
+
+                          <div>
+
+                            <strong>
+                              Sarah Ali
+                            </strong>
+
+                            <span>
+                              sarah.ali@nexuserp.com
+                            </span>
+
+                          </div>
+
+                        </div>
+
+                      </td>
+
+                      <td>
+                        Sales Manager
+                      </td>
+
+                      <td>
+                        Sales
+                      </td>
+
+                      <td>
+
+                        <span class="status-badge completed">
+                          Active
+                        </span>
+
+                      </td>
+
+                      <td>
+                        12 min ago
+                      </td>
+
+                      <td>
+                        <button class="table-action">⋮</button>
+                      </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                      <td>
+
+                        <div class="table-person">
+
+                          <div class="table-avatar">
+                            MK
+                          </div>
+
+                          <div>
+
+                            <strong>
+                              Michael Khan
+                            </strong>
+
+                            <span>
+                              michael.khan@nexuserp.com
+                            </span>
+
+                          </div>
+
+                        </div>
+
+                      </td>
+
+                      <td>
+                        Software Engineer
+                      </td>
+
+                      <td>
+                        Technology
+                      </td>
+
+                      <td>
+
+                        <span class="status-badge completed">
+                          Active
+                        </span>
+
+                      </td>
+
+                      <td>
+                        36 min ago
+                      </td>
+
+                      <td>
+                        <button class="table-action">⋮</button>
+                      </td>
+
+                    </tr>
+
+
+                  </tbody>
+
+                </table>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= NOTIFICATIONS ================= -->
+
+            <div class="dashboard-card settings-section" id="notifications">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Notifications</h3>
+
+                  <p>
+                    Choose which notifications you receive
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="settings-options">
+
+
+                <div class="setting-option">
+
+                  <div>
+
+                    <strong>
+                      Email Notifications
+                    </strong>
+
+                    <p>
+                      Receive important ERP updates by email
+                    </p>
+
+                  </div>
+
+                  <label class="toggle">
+
+                    <input
+                      type="checkbox"
+                      checked
+                    >
+
+                    <span></span>
+
+                  </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                  <div>
+
+                    <strong>
+                      Low Stock Alerts
+                    </strong>
+
+                    <p>
+                      Get notified when inventory reaches low levels
+                    </p>
+
+                  </div>
+
+                  <label class="toggle">
+
+                    <input
+                      type="checkbox"
+                      checked
+                    >
+
+                    <span></span>
+
+                  </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                  <div>
+
+                    <strong>
+                      Payment Reminders
+                    </strong>
+
+                    <p>
+                      Receive reminders about pending customer payments
+                    </p>
+
+                  </div>
+
+                  <label class="toggle">
+
+                    <input
+                      type="checkbox"
+                      checked
+                    >
+
+                    <span></span>
+
+                  </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                  <div>
+
+                    <strong>
+                      Purchase Order Updates
+                    </strong>
+
+                    <p>
+                      Get notified about purchase order status changes
+                    </p>
+
+                  </div>
+
+                  <label class="toggle">
+
+                    <input
+                      type="checkbox"
+                    >
+
+                    <span></span>
+
+                  </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                  <div>
+
+                    <strong>
+                      Employee Activity
+                    </strong>
+
+                    <p>
+                      Receive updates about important workforce activity
+                    </p>
+
+                  </div>
+
+                  <label class="toggle">
+
+                    <input
+                      type="checkbox"
+                      checked
+                    >
+
+                    <span></span>
+
+                  </label>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= SECURITY ================= -->
+
+            <div class="dashboard-card settings-section" id="security">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Security</h3>
+
+                  <p>
+                    Manage your account security settings
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="settings-form">
+
+
+                <div class="form-group">
+
+                  <label>
+                    Current Password
+                  </label>
+
+                  <input
+                    type="password"
+                    placeholder="Enter current password"
+                  >
+
+                </div>
+
+
+                <div class="form-row">
+
+                  <div class="form-group">
+
+                    <label>
+                      New Password
+                    </label>
+
+                    <input
+                      type="password"
+                      placeholder="Enter new password"
+                    >
+
+                  </div>
+
+
+                  <div class="form-group">
+
+                    <label>
+                      Confirm Password
+                    </label>
+
+                    <input
+                      type="password"
+                      placeholder="Confirm new password"
+                    >
+
+                  </div>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                  <div>
+
+                    <strong>
+                      Two-Factor Authentication
+                    </strong>
+
+                    <p>
+                      Add an extra layer of security to your account
+                    </p>
+
+                  </div>
+
+                  <button class="secondary-button">
+                    Enable
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= APPEARANCE ================= -->
+
+            <div class="dashboard-card settings-section" id="appearance">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Appearance</h3>
+
+                  <p>
+                    Customize how NEXUS ERP looks
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="settings-form">
+
+
+                <div class="form-group">
+
+                  <label>
+                    Theme
+                  </label>
+
+                  <select>
+
+                    <option selected>
+                      System Default
+                    </option>
+
+                    <option>
+                      Light
+                    </option>
+
+                    <option>
+                      Dark
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label>
+                    Language
+                  </label>
+
+                  <select>
+
+                    <option selected>
+                      English
+                    </option>
+
+                    <option>
+                      Arabic
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label>
+                    Date Format
+                  </label>
+
+                  <select>
+
+                    <option selected>
+                      DD MMM YYYY
+                    </option>
+
+                    <option>
+                      MM/DD/YYYY
+                    </option>
+
+                    <option>
+                      YYYY-MM-DD
+                    </option>
+
+                  </select>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= INTEGRATIONS ================= -->
+
+            <div class="dashboard-card settings-section" id="integrations">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Integrations</h3>
+
+                  <p>
+                    Connect NEXUS ERP with external services
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="integration-grid">
+
+
+                <div class="integration-card">
+
+                  <div class="integration-icon">
+                    G
+                  </div>
+
+                  <div>
+
+                    <strong>
+                      Google Workspace
+                    </strong>
+
+                    <p>
+                      Calendar, Gmail and Drive
+                    </p>
+
+                  </div>
+
+                  <span class="status-badge completed">
+                    Connected
+                  </span>
+
+                </div>
+
+
+                <div class="integration-card">
+
+                  <div class="integration-icon">
+                    P
+                  </div>
+
+                  <div>
+
+                    <strong>
+                      Payment Gateway
+                    </strong>
+
+                    <p>
+                      Online payment processing
+                    </p>
+
+                  </div>
+
+                  <button class="secondary-button">
+                    Connect
+                  </button>
+
+                </div>
+
+
+                <div class="integration-card">
+
+                  <div class="integration-icon">
+                    M
+                  </div>
+
+                  <div>
+
+                    <strong>
+                      Mail Service
+                    </strong>
+
+                    <p>
+                      Automated business emails
+                    </p>
+
+                  </div>
+
+                  <span class="status-badge completed">
+                    Connected
+                  </span>
+
+                </div>
+
+
+                <div class="integration-card">
+
+                  <div class="integration-icon">
+                    A
+                  </div>
+
+                  <div>
+
+                    <strong>
+                      Analytics
+                    </strong>
+
+                    <p>
+                      Business analytics and tracking
+                    </p>
+
+                  </div>
+
+                  <button class="secondary-button">
+                    Connect
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= BILLING ================= -->
+
+            <div class="dashboard-card settings-section" id="billing">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Billing & Subscription</h3>
+
+                  <p>
+                    Manage your NEXUS ERP subscription
+                  </p>
+
+                </div>
+
+                <span class="status-badge completed">
+                  Active
+                </span>
+
+              </div>
+
+
+              <div class="billing-summary">
+
+                <div>
+
+                  <span>
+                    Current Plan
+                  </span>
+
+                  <strong>
+                    Enterprise
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    Monthly Cost
+                  </span>
+
+                  <strong>
+                    AED 899
+                  </strong>
+
+                </div>
+
+
+                <div>
+
+                  <span>
+                    Next Billing
+                  </span>
+
+                  <strong>
+                    01 Oct 2026
+                  </strong>
+
+                </div>
+
+              </div>
+
+
+              <div class="page-actions">
+
+                <button class="secondary-button">
+                  Billing History
+                </button>
+
+                <button class="primary-button">
+                  Manage Plan
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= DANGER ZONE ================= -->
+
+            <div class="dashboard-card settings-section danger-zone">
+
+              <div class="card-header">
+
+                <div>
+
+                  <h3>Danger Zone</h3>
+
+                  <p>
+                    Irreversible account and organization actions
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div class="setting-option">
+
+                <div>
+
+                  <strong>
+                    Export Organization Data
+                  </strong>
+
+                  <p>
+                    Download a complete copy of your organization data.
+                  </p>
+
+                </div>
+
+                <button class="secondary-button">
+                  Export Data
+                </button>
+
+              </div>
+
+
+              <div class="setting-option">
+
+                <div>
+
+                  <strong>
+                    Delete Organization
+                  </strong>
+
+                  <p>
+                    Permanently remove your organization and all associated data.
+                  </p>
+
+                </div>
+
+                <button class="secondary-button">
+                  Delete Organization
+                </button>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

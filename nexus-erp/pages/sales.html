@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXUS ERP — Sales</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="erp-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div class="brand-text">
+          <strong>NEXUS</strong>
+          <span>ERP SYSTEM</span>
+        </div>
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+        <p class="nav-label">MAIN</p>
+
+        <a href="../index.html" class="nav-item">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="sales.html" class="nav-item active">
+          <span class="nav-icon">↗</span>
+          <span>Sales</span>
+        </a>
+
+        <a href="customers.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Customers</span>
+        </a>
+
+
+        <p class="nav-label">OPERATIONS</p>
+
+        <a href="inventory.html" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Inventory</span>
+        </a>
+
+        <a href="products.html" class="nav-item">
+          <span class="nav-icon">□</span>
+          <span>Products</span>
+        </a>
+
+        <a href="purchasing.html" class="nav-item">
+          <span class="nav-icon">⇩</span>
+          <span>Purchasing</span>
+        </a>
+
+        <a href="suppliers.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Suppliers</span>
+        </a>
+
+
+        <p class="nav-label">MANAGEMENT</p>
+
+        <a href="employees.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Employees</span>
+        </a>
+
+        <a href="finance.html" class="nav-item">
+          <span class="nav-icon">$</span>
+          <span>Finance</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+          <span class="nav-icon">▥</span>
+          <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+          <span class="nav-icon">⚙</span>
+          <span>Settings</span>
+        </a>
+
+        <p class="nav-label-pages">UI PAGES</p>
+
+        <a href="login.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">➔</span>
+          <span>Sign In</span>
+        </a>
+
+        <a href="register.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">✚</span>
+          <span>Register</span>
+        </a>
+
+        <a href="404.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">⚠</span>
+          <span>404 Error</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-footer">
+
+        <div class="help-box">
+
+          <span class="help-icon">?</span>
+
+          <div>
+            <strong>Need Help?</strong>
+            <p>Contact support</p>
+          </div>
+
+        </div>
+
+
+        <div class="user-mini">
+
+          <div class="user-avatar">
+            JD
+          </div>
+
+          <div class="user-info">
+            <strong>John Doe</strong>
+            <span>Administrator</span>
+          </div>
+
+          <button class="user-menu">⋮</button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button class="mobile-menu" id="mobileMenu">
+            ☰
+          </button>
+
+          <div class="page-heading">
+
+            <h1>Sales</h1>
+
+            <p>
+              Manage sales orders, invoices and customer transactions
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              placeholder="Search sales..."
+              id="globalSearch"
+            >
+
+            <kbd>⌘ K</kbd>
+
+          </div>
+
+
+          <button class="icon-button notification-button">
+            🔔
+            <span class="notification-dot"></span>
+          </button>
+
+
+          <div class="profile">
+
+            <div class="profile-avatar">
+              JD
+            </div>
+
+            <div class="profile-details">
+
+              <strong>John Doe</strong>
+
+              <span>
+                Administrator
+              </span>
+
+            </div>
+
+            <span class="profile-arrow">
+              ⌄
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <section class="dashboard-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="welcome-section">
+
+          <div>
+
+            <h2>Sales Overview</h2>
+
+            <p>
+              Track your sales performance and manage customer orders.
+            </p>
+
+          </div>
+
+
+          <div class="page-actions">
+
+            <button class="secondary-button">
+              ↓ Export
+            </button>
+
+            <button class="primary-button">
+              + New Sale
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= SALES STATS ================= -->
+
+        <div class="stats-grid">
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon revenue-icon">
+                $
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Sales</p>
+
+              <h3>AED 62,480</h3>
+
+              <span class="stat-change positive">
+                ↑ 8.2%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon sales-icon">
+                #
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Orders</p>
+
+              <h3>248</h3>
+
+              <span class="stat-change positive">
+                ↑ 6.4%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon orders-icon">
+                ✓
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Completed Orders</p>
+
+              <h3>214</h3>
+
+              <span class="stat-change positive">
+                ↑ 9.8%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon expenses-icon">
+                !
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Pending Payments</p>
+
+              <h3>AED 8,740</h3>
+
+              <span class="stat-change negative">
+                ↑ 3.2%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= SALES PERFORMANCE ================= -->
+
+        <div class="dashboard-grid">
+
+
+          <!-- Sales Chart -->
+
+          <div class="dashboard-card revenue-chart-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Sales Performance</h3>
+
+                <p>
+                  Sales revenue over time
+                </p>
+
+              </div>
+
+
+              <select class="period-select">
+
+                <option>
+                  Last 12 Months
+                </option>
+
+                <option>
+                  Last 6 Months
+                </option>
+
+                <option>
+                  Last 30 Days
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="chart-container">
+
+              <div class="chart-y-axis">
+
+                <span>100K</span>
+                <span>75K</span>
+                <span>50K</span>
+                <span>25K</span>
+                <span>0</span>
+
+              </div>
+
+
+              <div class="chart-area">
+
+                <div class="chart-grid-lines">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+
+                <div class="chart-placeholder">
+
+                  <div class="chart-line"></div>
+
+                </div>
+
+
+                <div class="chart-months">
+
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                  <span>Dec</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Sales Breakdown -->
+
+          <div class="dashboard-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Sales Breakdown</h3>
+
+                <p>
+                  By order status
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="sales-breakdown">
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot completed-dot"></span>
+
+                  <span>
+                    Completed
+                  </span>
+
+                </div>
+
+                <strong>214</strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <span style="width: 86%;"></span>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Pending
+                  </span>
+
+                </div>
+
+                <strong>22</strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <span style="width: 48%;"></span>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot overdue-dot"></span>
+
+                  <span>
+                    Cancelled
+                  </span>
+
+                </div>
+
+                <strong>12</strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <span style="width: 25%;"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= FILTERS ================= -->
+
+        <div class="dashboard-card sales-table-card">
+
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>Sales Orders</h3>
+
+              <p>
+                Manage all customer sales orders
+              </p>
+
+            </div>
+
+
+            <button class="secondary-button">
+              Filter
+            </button>
+
+          </div>
+
+
+          <div class="table-filters">
+
+            <div class="table-search">
+
+              <span>⌕</span>
+
+              <input
+                type="text"
+                placeholder="Search orders..."
+              >
+
+            </div>
+
+
+            <select class="filter-select">
+
+              <option>
+                All Status
+              </option>
+
+              <option>
+                Completed
+              </option>
+
+              <option>
+                Pending
+              </option>
+
+              <option>
+                Cancelled
+              </option>
+
+            </select>
+
+
+            <select class="filter-select">
+
+              <option>
+                All Customers
+              </option>
+
+              <option>
+                Al Noor Trading
+              </option>
+
+              <option>
+                Blue Horizon LLC
+              </option>
+
+              <option>
+                Vertex Solutions
+              </option>
+
+            </select>
+
+
+            <select class="filter-select">
+
+              <option>
+                This Month
+              </option>
+
+              <option>
+                Last Month
+              </option>
+
+              <option>
+                Last 3 Months
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- ================= SALES TABLE ================= -->
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <thead>
+
+                <tr>
+
+                  <th>
+                    <input type="checkbox">
+                  </th>
+
+                  <th>Order ID</th>
+
+                  <th>Customer</th>
+
+                  <th>Date</th>
+
+                  <th>Items</th>
+
+                  <th>Amount</th>
+
+                  <th>Status</th>
+
+                  <th>Action</th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+                  <td>
+                    <strong>#SO-1048</strong>
+                  </td>
+
+                  <td>
+                    Al Noor Trading
+                  </td>
+
+                  <td>
+                    23 Sep 2026
+                  </td>
+
+                  <td>
+                    8
+                  </td>
+
+                  <td>
+                    AED 4,250
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Completed
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+                  <td>
+                    <strong>#SO-1047</strong>
+                  </td>
+
+                  <td>
+                    Blue Horizon LLC
+                  </td>
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+                  <td>
+                    5
+                  </td>
+
+                  <td>
+                    AED 2,840
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge pending">
+                      Pending
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+                  <td>
+                    <strong>#SO-1046</strong>
+                  </td>
+
+                  <td>
+                    Vertex Solutions
+                  </td>
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+                  <td>
+                    12
+                  </td>
+
+                  <td>
+                    AED 6,120
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Completed
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+                  <td>
+                    <strong>#SO-1045</strong>
+                  </td>
+
+                  <td>
+                    Gulf Star Trading
+                  </td>
+
+                  <td>
+                    21 Sep 2026
+                  </td>
+
+                  <td>
+                    4
+                  </td>
+
+                  <td>
+                    AED 1,950
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge overdue">
+                      Cancelled
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+                  <td>
+                    <strong>#SO-1044</strong>
+                  </td>
+
+                  <td>
+                    Prime Technologies
+                  </td>
+
+                  <td>
+                    20 Sep 2026
+                  </td>
+
+                  <td>
+                    7
+                  </td>
+
+                  <td>
+                    AED 3,780
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Completed
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+                  <td>
+                    <strong>#SO-1043</strong>
+                  </td>
+
+                  <td>
+                    Emirates Office Supply
+                  </td>
+
+                  <td>
+                    19 Sep 2026
+                  </td>
+
+                  <td>
+                    15
+                  </td>
+
+                  <td>
+                    AED 7,420
+                  </td>
+
+                  <td>
+
+                    <span class="status-badge pending">
+                      Pending
+                    </span>
+
+                  </td>
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <!-- PAGINATION -->
+
+          <div class="table-footer">
+
+            <span>
+              Showing 1–6 of 248 orders
+            </span>
+
+
+            <div class="pagination">
+
+              <button disabled>
+                ←
+              </button>
+
+              <button class="active">
+                1
+              </button>
+
+              <button>
+                2
+              </button>
+
+              <button>
+                3
+              </button>
+
+              <button>
+                4
+              </button>
+
+              <span>...</span>
+
+              <button>
+                42
+              </button>
+
+              <button>
+                →
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

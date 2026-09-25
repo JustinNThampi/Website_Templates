@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXUS ERP — Products</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="erp-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div class="brand-text">
+          <strong>NEXUS</strong>
+          <span>ERP SYSTEM</span>
+        </div>
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+        <p class="nav-label">MAIN</p>
+
+        <a href="../index.html" class="nav-item">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="sales.html" class="nav-item">
+          <span class="nav-icon">↗</span>
+          <span>Sales</span>
+        </a>
+
+        <a href="customers.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Customers</span>
+        </a>
+
+
+        <p class="nav-label">OPERATIONS</p>
+
+        <a href="inventory.html" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Inventory</span>
+        </a>
+
+        <a href="products.html" class="nav-item active">
+          <span class="nav-icon">□</span>
+          <span>Products</span>
+        </a>
+
+        <a href="purchasing.html" class="nav-item">
+          <span class="nav-icon">⇩</span>
+          <span>Purchasing</span>
+        </a>
+
+        <a href="suppliers.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Suppliers</span>
+        </a>
+
+
+        <p class="nav-label">MANAGEMENT</p>
+
+        <a href="employees.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Employees</span>
+        </a>
+
+        <a href="finance.html" class="nav-item">
+          <span class="nav-icon">$</span>
+          <span>Finance</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+          <span class="nav-icon">▥</span>
+          <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+          <span class="nav-icon">⚙</span>
+          <span>Settings</span>
+        </a>
+
+        <p class="nav-label-pages">UI PAGES</p>
+
+        <a href="login.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">➔</span>
+          <span>Sign In</span>
+        </a>
+
+        <a href="register.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">✚</span>
+          <span>Register</span>
+        </a>
+
+        <a href="404.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">⚠</span>
+          <span>404 Error</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-footer">
+
+        <div class="help-box">
+
+          <span class="help-icon">?</span>
+
+          <div>
+            <strong>Need Help?</strong>
+            <p>Contact support</p>
+          </div>
+
+        </div>
+
+
+        <div class="user-mini">
+
+          <div class="user-avatar">
+            JD
+          </div>
+
+          <div class="user-info">
+
+            <strong>John Doe</strong>
+
+            <span>
+              Administrator
+            </span>
+
+          </div>
+
+          <button class="user-menu">
+            ⋮
+          </button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button class="mobile-menu" id="mobileMenu">
+            ☰
+          </button>
+
+          <div class="page-heading">
+
+            <h1>Products</h1>
+
+            <p>
+              Manage your product catalog, pricing and availability
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              placeholder="Search products..."
+              id="globalSearch"
+            >
+
+            <kbd>⌘ K</kbd>
+
+          </div>
+
+
+          <button class="icon-button notification-button">
+
+            🔔
+
+            <span class="notification-dot"></span>
+
+          </button>
+
+
+          <div class="profile">
+
+            <div class="profile-avatar">
+              JD
+            </div>
+
+            <div class="profile-details">
+
+              <strong>John Doe</strong>
+
+              <span>
+                Administrator
+              </span>
+
+            </div>
+
+            <span class="profile-arrow">
+              ⌄
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <section class="dashboard-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="welcome-section">
+
+          <div>
+
+            <h2>Product Catalog</h2>
+
+            <p>
+              Manage products, categories, pricing and product information.
+            </p>
+
+          </div>
+
+
+          <div class="page-actions">
+
+            <button class="secondary-button">
+              ↓ Export
+            </button>
+
+            <button class="secondary-button">
+              + Category
+            </button>
+
+            <button class="primary-button">
+              + Add Product
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT STATS ================= -->
+
+        <div class="stats-grid">
+
+
+          <!-- Total Products -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon revenue-icon">
+                □
+              </div>
+
+              <span class="stat-period">
+                Catalog
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Products</p>
+
+              <h3>1,284</h3>
+
+              <span class="stat-change positive">
+                ↑ 4.8%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Active Products -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon sales-icon">
+                ✓
+              </div>
+
+              <span class="stat-period">
+                Active
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Active Products</p>
+
+              <h3>1,196</h3>
+
+              <span class="stat-change positive">
+                ↑ 5.6%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Categories -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon orders-icon">
+                #
+              </div>
+
+              <span class="stat-period">
+                Catalog
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Categories</p>
+
+              <h3>24</h3>
+
+              <span class="stat-change positive">
+                ↑ 2
+                <small>this month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Average Price -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon expenses-icon">
+                $
+              </div>
+
+              <span class="stat-period">
+                Average
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Average Product Price</p>
+
+              <h3>AED 378</h3>
+
+              <span class="stat-change positive">
+                ↑ 3.7%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT ANALYTICS ================= -->
+
+        <div class="dashboard-grid">
+
+
+          <!-- Product Performance -->
+
+          <div class="dashboard-card revenue-chart-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Product Performance</h3>
+
+                <p>
+                  Product sales performance over the last 12 months
+                </p>
+
+              </div>
+
+
+              <select class="period-select">
+
+                <option>
+                  Last 12 Months
+                </option>
+
+                <option>
+                  Last 6 Months
+                </option>
+
+                <option>
+                  Last 30 Days
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="chart-container">
+
+              <div class="chart-y-axis">
+
+                <span>5K</span>
+                <span>4K</span>
+                <span>3K</span>
+                <span>2K</span>
+                <span>0</span>
+
+              </div>
+
+
+              <div class="chart-area">
+
+                <div class="chart-grid-lines">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+
+                <div class="chart-placeholder">
+
+                  <div class="chart-line"></div>
+
+                </div>
+
+
+                <div class="chart-months">
+
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                  <span>Dec</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Categories -->
+
+          <div class="dashboard-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Product Categories</h3>
+
+                <p>
+                  Products by category
+                </p>
+
+              </div>
+
+              <a href="#">
+                Manage
+              </a>
+
+            </div>
+
+
+            <div class="sales-breakdown">
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot completed-dot"></span>
+
+                  <span>
+                    Electronics
+                  </span>
+
+                </div>
+
+                <strong>
+                  428
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 72%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Office Supplies
+                  </span>
+
+                </div>
+
+                <strong>
+                  326
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 55%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot overdue-dot"></span>
+
+                  <span>
+                    Accessories
+                  </span>
+
+                </div>
+
+                <strong>
+                  284
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 48%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot completed-dot"></span>
+
+                  <span>
+                    Furniture
+                  </span>
+
+                </div>
+
+                <strong>
+                  146
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 30%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Networking
+                  </span>
+
+                </div>
+
+                <strong>
+                  100
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 21%;"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT TABLE ================= -->
+
+        <div class="dashboard-card sales-table-card">
+
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>All Products</h3>
+
+              <p>
+                Browse and manage your complete product catalog
+              </p>
+
+            </div>
+
+
+            <button class="secondary-button">
+              Filter
+            </button>
+
+          </div>
+
+
+          <!-- FILTERS -->
+
+          <div class="table-filters">
+
+
+            <div class="table-search">
+
+              <span>⌕</span>
+
+              <input
+                type="text"
+                placeholder="Search product, SKU or barcode..."
+              >
+
+            </div>
+
+
+            <select class="filter-select">
+
+              <option>
+                All Categories
+              </option>
+
+              <option>
+                Electronics
+              </option>
+
+              <option>
+                Office Supplies
+              </option>
+
+              <option>
+                Accessories
+              </option>
+
+              <option>
+                Furniture
+              </option>
+
+              <option>
+                Networking
+              </option>
+
+            </select>
+
+
+            <select class="filter-select">
+
+              <option>
+                All Status
+              </option>
+
+              <option>
+                Active
+              </option>
+
+              <option>
+                Draft
+              </option>
+
+              <option>
+                Archived
+              </option>
+
+            </select>
+
+
+            <select class="filter-select">
+
+              <option>
+                Sort: Recently Added
+              </option>
+
+              <option>
+                Sort: Product Name
+              </option>
+
+              <option>
+                Sort: Price
+              </option>
+
+              <option>
+                Sort: Stock
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- PRODUCT TABLE -->
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <thead>
+
+                <tr>
+
+                  <th>
+                    <input type="checkbox">
+                  </th>
+
+                  <th>Product</th>
+
+                  <th>SKU</th>
+
+                  <th>Category</th>
+
+                  <th>Price</th>
+
+                  <th>Stock</th>
+
+                  <th>Status</th>
+
+                  <th>Updated</th>
+
+                  <th>Action</th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+
+                <!-- PRODUCT 1 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="product-image">
+                        LP
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Laptop Pro 15
+                        </strong>
+
+                        <span>
+                          Premium Business Laptop
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    LP-1501
+                  </td>
+
+
+                  <td>
+                    Electronics
+                  </td>
+
+
+                  <td>
+                    AED 1,500
+                  </td>
+
+
+                  <td>
+                    <strong>84</strong>
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Active
+                    </span>
+
+                  </td>
+
+
+                  <td>
+                    23 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PRODUCT 2 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="product-image">
+                        KB
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Wireless Keyboard
+                        </strong>
+
+                        <span>
+                          Bluetooth Mechanical Keyboard
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    KB-2402
+                  </td>
+
+
+                  <td>
+                    Accessories
+                  </td>
+
+
+                  <td>
+                    AED 220
+                  </td>
+
+
+                  <td>
+                    <strong>7</strong>
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Active
+                    </span>
+
+                  </td>
+
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PRODUCT 3 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="product-image">
+                        MN
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          24" Monitor
+                        </strong>
+
+                        <span>
+                          Full HD Business Monitor
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    MN-3204
+                  </td>
+
+
+                  <td>
+                    Electronics
+                  </td>
+
+
+                  <td>
+                    AED 950
+                  </td>
+
+
+                  <td>
+                    <strong>3</strong>
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Active
+                    </span>
+
+                  </td>
+
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PRODUCT 4 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="product-image">
+                        MS
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Wireless Mouse
+                        </strong>
+
+                        <span>
+                          Ergonomic Wireless Mouse
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    MS-1903
+                  </td>
+
+
+                  <td>
+                    Accessories
+                  </td>
+
+
+                  <td>
+                    AED 80
+                  </td>
+
+
+                  <td>
+                    <strong>9</strong>
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Active
+                    </span>
+
+                  </td>
+
+
+                  <td>
+                    21 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PRODUCT 5 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="product-image">
+                        OC
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Executive Office Chair
+                        </strong>
+
+                        <span>
+                          Ergonomic Leather Office Chair
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    OC-4105
+                  </td>
+
+
+                  <td>
+                    Furniture
+                  </td>
+
+
+                  <td>
+                    AED 1,250
+                  </td>
+
+
+                  <td>
+                    <strong>28</strong>
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Active
+                    </span>
+
+                  </td>
+
+
+                  <td>
+                    20 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PRODUCT 6 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="product-image">
+                        UH
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          USB-C Hub
+                        </strong>
+
+                        <span>
+                          8-in-1 USB-C Multiport Adapter
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    UH-2206
+                  </td>
+
+
+                  <td>
+                    Accessories
+                  </td>
+
+
+                  <td>
+                    AED 145
+                  </td>
+
+
+                  <td>
+                    <strong>64</strong>
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Active
+                    </span>
+
+                  </td>
+
+
+                  <td>
+                    19 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <!-- PAGINATION -->
+
+          <div class="table-footer">
+
+            <span>
+              Showing 1–6 of 1,284 products
+            </span>
+
+
+            <div class="pagination">
+
+              <button disabled>
+                ←
+              </button>
+
+              <button class="active">
+                1
+              </button>
+
+              <button>
+                2
+              </button>
+
+              <button>
+                3
+              </button>
+
+              <button>
+                4
+              </button>
+
+              <span>
+                ...
+              </span>
+
+              <button>
+                214
+              </button>
+
+              <button>
+                →
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= FEATURED PRODUCTS ================= -->
+
+        <div class="dashboard-card low-stock-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>Recently Added Products</h3>
+
+              <p>
+                Products recently added to your catalog
+              </p>
+
+            </div>
+
+
+            <button class="secondary-button">
+              View All
+            </button>
+
+          </div>
+
+
+          <div class="low-stock-grid">
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                NB
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Network Switch 24-Port
+                </strong>
+
+                <span>
+                  SKU: NS-7201
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  AED 680
+                </strong>
+
+                <span>
+                  price
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                HD
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  External SSD 1TB
+                </strong>
+
+                <span>
+                  SKU: HD-6106
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  AED 420
+                </strong>
+
+                <span>
+                  price
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                CM
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  1080p Conference Camera
+                </strong>
+
+                <span>
+                  SKU: CM-5308
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  AED 590
+                </strong>
+
+                <span>
+                  price
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                PD
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Power Distribution Unit
+                </strong>
+
+                <span>
+                  SKU: PD-8402
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  AED 315
+                </strong>
+
+                <span>
+                  price
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

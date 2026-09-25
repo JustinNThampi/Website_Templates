@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXUS ERP — Purchasing</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="erp-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div class="brand-text">
+          <strong>NEXUS</strong>
+          <span>ERP SYSTEM</span>
+        </div>
+      </div>
+
+
+      <nav class="sidebar-nav">
+
+        <p class="nav-label">MAIN</p>
+
+        <a href="../index.html" class="nav-item">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="sales.html" class="nav-item">
+          <span class="nav-icon">↗</span>
+          <span>Sales</span>
+        </a>
+
+        <a href="customers.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Customers</span>
+        </a>
+
+
+        <p class="nav-label">OPERATIONS</p>
+
+        <a href="inventory.html" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Inventory</span>
+        </a>
+
+        <a href="products.html" class="nav-item">
+          <span class="nav-icon">□</span>
+          <span>Products</span>
+        </a>
+
+        <a href="purchasing.html" class="nav-item active">
+          <span class="nav-icon">⇩</span>
+          <span>Purchasing</span>
+        </a>
+
+        <a href="suppliers.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Suppliers</span>
+        </a>
+
+
+        <p class="nav-label">MANAGEMENT</p>
+
+        <a href="employees.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Employees</span>
+        </a>
+
+        <a href="finance.html" class="nav-item">
+          <span class="nav-icon">$</span>
+          <span>Finance</span>
+        </a>
+
+        <a href="reports.html" class="nav-item">
+          <span class="nav-icon">▥</span>
+          <span>Reports</span>
+        </a>
+
+        <a href="settings.html" class="nav-item">
+          <span class="nav-icon">⚙</span>
+          <span>Settings</span>
+        </a>
+
+        <p class="nav-label-pages">UI PAGES</p>
+
+        <a href="login.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">➔</span>
+          <span>Sign In</span>
+        </a>
+
+        <a href="register.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">✚</span>
+          <span>Register</span>
+        </a>
+
+        <a href="404.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">⚠</span>
+          <span>404 Error</span>
+        </a>
+
+      </nav>
+
+
+      <div class="sidebar-footer">
+
+        <div class="help-box">
+
+          <span class="help-icon">?</span>
+
+          <div>
+            <strong>Need Help?</strong>
+            <p>Contact support</p>
+          </div>
+
+        </div>
+
+
+        <div class="user-mini">
+
+          <div class="user-avatar">
+            JD
+          </div>
+
+          <div class="user-info">
+            <strong>John Doe</strong>
+            <span>Administrator</span>
+          </div>
+
+          <button class="user-menu">
+            ⋮
+          </button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button class="mobile-menu" id="mobileMenu">
+            ☰
+          </button>
+
+          <div class="page-heading">
+
+            <h1>Purchasing</h1>
+
+            <p>
+              Manage purchase orders, supplier purchases and incoming stock
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              placeholder="Search purchases..."
+              id="globalSearch"
+            >
+
+            <kbd>⌘ K</kbd>
+
+          </div>
+
+
+          <button class="icon-button notification-button">
+
+            🔔
+
+            <span class="notification-dot"></span>
+
+          </button>
+
+
+          <div class="profile">
+
+            <div class="profile-avatar">
+              JD
+            </div>
+
+            <div class="profile-details">
+
+              <strong>John Doe</strong>
+
+              <span>
+                Administrator
+              </span>
+
+            </div>
+
+            <span class="profile-arrow">
+              ⌄
+            </span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <section class="dashboard-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="welcome-section">
+
+          <div>
+
+            <h2>Purchasing Overview</h2>
+
+            <p>
+              Track purchase orders, supplier spending and incoming inventory.
+            </p>
+
+          </div>
+
+
+          <div class="page-actions">
+
+            <button class="secondary-button">
+              ↓ Export
+            </button>
+
+            <button class="secondary-button">
+              + Receive Stock
+            </button>
+
+            <button class="primary-button">
+              + New Purchase Order
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PURCHASING STATS ================= -->
+
+        <div class="stats-grid">
+
+
+          <!-- Total Purchases -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon revenue-icon">
+                $
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Purchases</p>
+
+              <h3>AED 38,740</h3>
+
+              <span class="stat-change positive">
+                ↑ 7.8%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Purchase Orders -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon sales-icon">
+                #
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Purchase Orders</p>
+
+              <h3>86</h3>
+
+              <span class="stat-change positive">
+                ↑ 12.4%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Pending Orders -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon orders-icon">
+                !
+              </div>
+
+              <span class="stat-period">
+                Pending
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Pending Orders</p>
+
+              <h3>18</h3>
+
+              <span class="stat-change negative">
+                ↑ 5.2%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Outstanding -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon expenses-icon">
+                ◷
+              </div>
+
+              <span class="stat-period">
+                Outstanding
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Outstanding Payments</p>
+
+              <h3>AED 12,480</h3>
+
+              <span class="stat-change positive">
+                ↓ 3.6%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PURCHASING ANALYTICS ================= -->
+
+        <div class="dashboard-grid">
+
+
+          <!-- Purchase Spending -->
+
+          <div class="dashboard-card revenue-chart-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Purchase Spending</h3>
+
+                <p>
+                  Purchasing expenditure over the last 12 months
+                </p>
+
+              </div>
+
+
+              <select class="period-select">
+
+                <option>
+                  Last 12 Months
+                </option>
+
+                <option>
+                  Last 6 Months
+                </option>
+
+                <option>
+                  Last 30 Days
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="chart-container">
+
+              <div class="chart-y-axis">
+
+                <span>50K</span>
+                <span>40K</span>
+                <span>30K</span>
+                <span>20K</span>
+                <span>0</span>
+
+              </div>
+
+
+              <div class="chart-area">
+
+                <div class="chart-grid-lines">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+
+                <div class="chart-placeholder">
+
+                  <div class="chart-line"></div>
+
+                </div>
+
+
+                <div class="chart-months">
+
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                  <span>Dec</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Purchase Status -->
+
+          <div class="dashboard-card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>Purchase Status</h3>
+
+                <p>
+                  Current purchase order status
+                </p>
+
+              </div>
+
+              <a href="#">
+                View All
+              </a>
+
+            </div>
+
+
+            <div class="sales-breakdown">
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot completed-dot"></span>
+
+                  <span>
+                    Received
+                  </span>
+
+                </div>
+
+                <strong>
+                  52
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 76%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Pending
+                  </span>
+
+                </div>
+
+                <strong>
+                  18
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 42%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot overdue-dot"></span>
+
+                  <span>
+                    Cancelled
+                  </span>
+
+                </div>
+
+                <strong>
+                  9
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 21%;"></div>
+
+              </div>
+
+
+              <div class="breakdown-item">
+
+                <div class="breakdown-label">
+
+                  <span class="breakdown-dot pending-dot"></span>
+
+                  <span>
+                    Partially Received
+                  </span>
+
+                </div>
+
+                <strong>
+                  7
+                </strong>
+
+              </div>
+
+
+              <div class="breakdown-progress">
+
+                <div style="width: 17%;"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= PURCHASE ORDERS ================= -->
+
+        <div class="dashboard-card sales-table-card">
+
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>Purchase Orders</h3>
+
+              <p>
+                Manage supplier purchase orders and deliveries
+              </p>
+
+            </div>
+
+
+            <button class="secondary-button">
+              Filter
+            </button>
+
+          </div>
+
+
+          <!-- FILTERS -->
+
+          <div class="table-filters">
+
+
+            <div class="table-search">
+
+              <span>⌕</span>
+
+              <input
+                type="text"
+                placeholder="Search purchase order or supplier..."
+              >
+
+            </div>
+
+
+            <select class="filter-select">
+
+              <option>
+                All Status
+              </option>
+
+              <option>
+                Received
+              </option>
+
+              <option>
+                Pending
+              </option>
+
+              <option>
+                Partially Received
+              </option>
+
+              <option>
+                Cancelled
+              </option>
+
+            </select>
+
+
+            <select class="filter-select">
+
+              <option>
+                All Suppliers
+              </option>
+
+              <option>
+                TechSource Electronics
+              </option>
+
+              <option>
+                Gulf Office Supplies
+              </option>
+
+              <option>
+                Emirates Distribution
+              </option>
+
+              <option>
+                Prime Wholesale
+              </option>
+
+            </select>
+
+
+            <select class="filter-select">
+
+              <option>
+                This Month
+              </option>
+
+              <option>
+                Last Month
+              </option>
+
+              <option>
+                Last 3 Months
+              </option>
+
+              <option>
+                This Year
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- PURCHASE TABLE -->
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <thead>
+
+                <tr>
+
+                  <th>
+                    <input type="checkbox">
+                  </th>
+
+                  <th>Purchase Order</th>
+
+                  <th>Supplier</th>
+
+                  <th>Order Date</th>
+
+                  <th>Items</th>
+
+                  <th>Total</th>
+
+                  <th>Expected</th>
+
+                  <th>Status</th>
+
+                  <th>Action</th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+
+                <!-- PO 1 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <strong>
+                      #PO-2086
+                    </strong>
+
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        TE
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          TechSource Electronics
+                        </strong>
+
+                        <span>
+                          Dubai, UAE
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    23 Sep 2026
+                  </td>
+
+
+                  <td>
+                    24
+                  </td>
+
+
+                  <td>
+                    AED 12,480
+                  </td>
+
+
+                  <td>
+                    27 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge pending">
+                      Pending
+                    </span>
+
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PO 2 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <strong>
+                      #PO-2085
+                    </strong>
+
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        GO
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Gulf Office Supplies
+                        </strong>
+
+                        <span>
+                          Abu Dhabi, UAE
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+
+                  <td>
+                    38
+                  </td>
+
+
+                  <td>
+                    AED 7,840
+                  </td>
+
+
+                  <td>
+                    25 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Received
+                    </span>
+
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PO 3 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <strong>
+                      #PO-2084
+                    </strong>
+
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        ED
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Emirates Distribution
+                        </strong>
+
+                        <span>
+                          Dubai, UAE
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    21 Sep 2026
+                  </td>
+
+
+                  <td>
+                    16
+                  </td>
+
+
+                  <td>
+                    AED 9,620
+                  </td>
+
+
+                  <td>
+                    24 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge pending">
+                      Partially Received
+                    </span>
+
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PO 4 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <strong>
+                      #PO-2083
+                    </strong>
+
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        PW
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Prime Wholesale
+                        </strong>
+
+                        <span>
+                          Sharjah, UAE
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    20 Sep 2026
+                  </td>
+
+
+                  <td>
+                    12
+                  </td>
+
+
+                  <td>
+                    AED 5,280
+                  </td>
+
+
+                  <td>
+                    23 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge completed">
+                      Received
+                    </span>
+
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PO 5 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <strong>
+                      #PO-2082
+                    </strong>
+
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        TE
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          TechSource Electronics
+                        </strong>
+
+                        <span>
+                          Dubai, UAE
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    19 Sep 2026
+                  </td>
+
+
+                  <td>
+                    31
+                  </td>
+
+
+                  <td>
+                    AED 14,760
+                  </td>
+
+
+                  <td>
+                    26 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge pending">
+                      Pending
+                    </span>
+
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <!-- PO 6 -->
+
+                <tr>
+
+                  <td>
+                    <input type="checkbox">
+                  </td>
+
+
+                  <td>
+
+                    <strong>
+                      #PO-2081
+                    </strong>
+
+                  </td>
+
+
+                  <td>
+
+                    <div class="table-person">
+
+                      <div class="table-avatar">
+                        GO
+                      </div>
+
+                      <div>
+
+                        <strong>
+                          Gulf Office Supplies
+                        </strong>
+
+                        <span>
+                          Abu Dhabi, UAE
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                  </td>
+
+
+                  <td>
+                    18 Sep 2026
+                  </td>
+
+
+                  <td>
+                    21
+                  </td>
+
+
+                  <td>
+                    AED 6,420
+                  </td>
+
+
+                  <td>
+                    22 Sep 2026
+                  </td>
+
+
+                  <td>
+
+                    <span class="status-badge overdue">
+                      Cancelled
+                    </span>
+
+                  </td>
+
+
+                  <td>
+
+                    <button class="table-action">
+                      ⋮
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <!-- PAGINATION -->
+
+          <div class="table-footer">
+
+            <span>
+              Showing 1–6 of 86 purchase orders
+            </span>
+
+
+            <div class="pagination">
+
+              <button disabled>
+                ←
+              </button>
+
+              <button class="active">
+                1
+              </button>
+
+              <button>
+                2
+              </button>
+
+              <button>
+                3
+              </button>
+
+              <button>
+                4
+              </button>
+
+              <span>
+                ...
+              </span>
+
+              <button>
+                15
+              </button>
+
+              <button>
+                →
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= INCOMING STOCK ================= -->
+
+        <div class="dashboard-card low-stock-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>Incoming Stock</h3>
+
+              <p>
+                Expected deliveries from suppliers
+              </p>
+
+            </div>
+
+
+            <button class="secondary-button">
+              View Schedule
+            </button>
+
+          </div>
+
+
+          <div class="low-stock-grid">
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                LP
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Laptop Pro 15
+                </strong>
+
+                <span>
+                  PO-2086 · 12 units
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  27 Sep
+                </strong>
+
+                <span>
+                  expected
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                MN
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  24" Monitor
+                </strong>
+
+                <span>
+                  PO-2085 · 18 units
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  25 Sep
+                </strong>
+
+                <span>
+                  expected
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                KB
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Wireless Keyboard
+                </strong>
+
+                <span>
+                  PO-2084 · 40 units
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  24 Sep
+                </strong>
+
+                <span>
+                  expected
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                MS
+              </div>
+
+              <div class="product-details">
+
+                <strong>
+                  Wireless Mouse
+                </strong>
+
+                <span>
+                  PO-2083 · 65 units
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+
+                <strong>
+                  23 Sep
+                </strong>
+
+                <span>
+                  expected
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

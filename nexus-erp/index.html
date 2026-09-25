@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXUS ERP — Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="erp-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">N</div>
+
+        <div class="brand-text">
+          <strong>NEXUS</strong>
+          <span>ERP SYSTEM</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <p class="nav-label">MAIN</p>
+
+        <a href="index.html" class="nav-item active">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="pages/sales.html" class="nav-item">
+          <span class="nav-icon">↗</span>
+          <span>Sales</span>
+        </a>
+
+        <a href="pages/customers.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Customers</span>
+        </a>
+
+        <p class="nav-label">OPERATIONS</p>
+
+        <a href="pages/inventory.html" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Inventory</span>
+        </a>
+
+        <a href="pages/products.html" class="nav-item">
+          <span class="nav-icon">□</span>
+          <span>Products</span>
+        </a>
+
+        <a href="pages/purchasing.html" class="nav-item">
+          <span class="nav-icon">⇩</span>
+          <span>Purchasing</span>
+        </a>
+
+        <a href="pages/suppliers.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Suppliers</span>
+        </a>
+
+        <p class="nav-label">MANAGEMENT</p>
+
+        <a href="pages/employees.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Employees</span>
+        </a>
+
+        <a href="pages/finance.html" class="nav-item">
+          <span class="nav-icon">$</span>
+          <span>Finance</span>
+        </a>
+
+        <a href="pages/reports.html" class="nav-item">
+          <span class="nav-icon">▥</span>
+          <span>Reports</span>
+        </a>
+
+        <a href="pages/settings.html" class="nav-item">
+          <span class="nav-icon">⚙</span>
+          <span>Settings</span>
+        </a>
+
+        <p class="nav-label-pages">UI PAGES</p>
+
+        <a href="pages/login.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">➔</span>
+          <span>Sign In</span>
+        </a>
+
+        <a href="pages/register.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">✚</span>
+          <span>Register</span>
+        </a>
+
+        <a href="pages/404.html" class="nav-item nav-item-demo">
+          <span class="nav-icon">⚠</span>
+          <span>404 Error</span>
+        </a>
+
+      </nav>
+
+      <!-- Sidebar Footer -->
+
+      <div class="sidebar-footer">
+
+        <div class="help-box">
+          <span class="help-icon">?</span>
+
+          <div>
+            <strong>Need Help?</strong>
+            <p>Contact support</p>
+          </div>
+        </div>
+
+        <div class="user-mini">
+
+          <div class="user-avatar">
+            JD
+          </div>
+
+          <div class="user-info">
+            <strong>John Doe</strong>
+            <span>Administrator</span>
+          </div>
+
+          <button class="user-menu">⋮</button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button class="mobile-menu" id="mobileMenu">
+            ☰
+          </button>
+
+          <div class="page-heading">
+            <h1>Dashboard</h1>
+            <p>Overview of your business performance</p>
+          </div>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <!-- Search -->
+
+          <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              placeholder="Search anything..."
+              id="globalSearch"
+            >
+
+            <kbd>⌘ K</kbd>
+
+          </div>
+
+
+          <!-- Notifications -->
+
+          <button class="icon-button notification-button">
+            🔔
+            <span class="notification-dot"></span>
+          </button>
+
+
+          <!-- Profile -->
+
+          <div class="profile">
+
+            <div class="profile-avatar">
+              JD
+            </div>
+
+            <div class="profile-details">
+              <strong>John Doe</strong>
+              <span>Administrator</span>
+            </div>
+
+            <span class="profile-arrow">⌄</span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <section class="dashboard-content">
+
+
+        <!-- Welcome -->
+
+        <div class="welcome-section">
+
+          <div>
+
+            <h2>Good morning, John 👋</h2>
+
+            <p>
+              Here's what's happening with your business today.
+            </p>
+
+          </div>
+
+          <button class="primary-button">
+            + Create New
+          </button>
+
+        </div>
+
+
+        <!-- ================= STAT CARDS ================= -->
+
+        <div class="stats-grid">
+
+
+          <!-- Revenue -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon revenue-icon">
+                $
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Revenue</p>
+
+              <h3>AED 84,250</h3>
+
+              <span class="stat-change positive">
+                ↑ 12.5%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Sales -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon sales-icon">
+                ↗
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Sales</p>
+
+              <h3>AED 62,480</h3>
+
+              <span class="stat-change positive">
+                ↑ 8.2%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Orders -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon orders-icon">
+                #
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Orders</p>
+
+              <h3>248</h3>
+
+              <span class="stat-change positive">
+                ↑ 6.4%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- Expenses -->
+
+          <div class="stat-card">
+
+            <div class="stat-header">
+
+              <div class="stat-icon expenses-icon">
+                −
+              </div>
+
+              <span class="stat-period">
+                This Month
+              </span>
+
+            </div>
+
+            <div class="stat-body">
+
+              <p>Total Expenses</p>
+
+              <h3>AED 21,680</h3>
+
+              <span class="stat-change negative">
+                ↑ 4.1%
+                <small>vs last month</small>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= ANALYTICS ================= -->
+
+        <div class="dashboard-grid">
+
+
+          <!-- Revenue Chart -->
+
+          <div class="dashboard-card revenue-chart-card">
+
+            <div class="card-header">
+
+              <div>
+                <h3>Revenue Overview</h3>
+                <p>Monthly revenue performance</p>
+              </div>
+
+              <select class="period-select">
+                <option>Last 12 Months</option>
+                <option>Last 6 Months</option>
+                <option>Last 30 Days</option>
+              </select>
+
+            </div>
+
+
+            <div class="chart-container">
+
+              <div class="chart-y-axis">
+
+                <span>100K</span>
+                <span>75K</span>
+                <span>50K</span>
+                <span>25K</span>
+                <span>0</span>
+
+              </div>
+
+
+              <div class="chart-area">
+
+                <div class="chart-grid-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="chart-placeholder">
+
+                  <div class="chart-line"></div>
+
+                </div>
+
+
+                <div class="chart-months">
+
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                  <span>Dec</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Inventory -->
+
+          <div class="dashboard-card inventory-card">
+
+            <div class="card-header">
+
+              <div>
+                <h3>Inventory Overview</h3>
+                <p>Current stock status</p>
+              </div>
+
+              <a href="pages/inventory.html">
+                View All
+              </a>
+
+            </div>
+
+
+            <div class="inventory-summary">
+
+              <div class="inventory-item">
+
+                <div class="inventory-number">
+                  1,284
+                </div>
+
+                <span>Total Products</span>
+
+              </div>
+
+
+              <div class="inventory-item">
+
+                <div class="inventory-number">
+                  96
+                </div>
+
+                <span>Low Stock</span>
+
+              </div>
+
+
+              <div class="inventory-item">
+
+                <div class="inventory-number">
+                  12
+                </div>
+
+                <span>Out of Stock</span>
+
+              </div>
+
+            </div>
+
+
+            <div class="stock-progress">
+
+              <div class="progress-label">
+                <span>Stock Capacity</span>
+                <strong>78%</strong>
+              </div>
+
+              <div class="progress-bar">
+                <span style="width: 78%"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= BOTTOM GRID ================= -->
+
+        <div class="bottom-grid">
+
+
+          <!-- Recent Transactions -->
+
+          <div class="dashboard-card transactions-card">
+
+            <div class="card-header">
+
+              <div>
+                <h3>Recent Transactions</h3>
+                <p>Latest financial activity</p>
+              </div>
+
+              <a href="pages/finance.html">
+                View All
+              </a>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+              <table>
+
+                <thead>
+
+                  <tr>
+                    <th>Transaction</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                  </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                  <tr>
+
+                    <td>
+                      <strong>#INV-1048</strong>
+                    </td>
+
+                    <td>Al Noor Trading</td>
+
+                    <td>23 Sep 2026</td>
+
+                    <td>AED 4,250</td>
+
+                    <td>
+                      <span class="status-badge completed">
+                        Completed
+                      </span>
+                    </td>
+
+                  </tr>
+
+
+                  <tr>
+
+                    <td>
+                      <strong>#INV-1047</strong>
+                    </td>
+
+                    <td>Blue Horizon LLC</td>
+
+                    <td>22 Sep 2026</td>
+
+                    <td>AED 2,840</td>
+
+                    <td>
+                      <span class="status-badge pending">
+                        Pending
+                      </span>
+                    </td>
+
+                  </tr>
+
+
+                  <tr>
+
+                    <td>
+                      <strong>#INV-1046</strong>
+                    </td>
+
+                    <td>Vertex Solutions</td>
+
+                    <td>22 Sep 2026</td>
+
+                    <td>AED 6,120</td>
+
+                    <td>
+                      <span class="status-badge completed">
+                        Completed
+                      </span>
+                    </td>
+
+                  </tr>
+
+
+                  <tr>
+
+                    <td>
+                      <strong>#INV-1045</strong>
+                    </td>
+
+                    <td>Gulf Star Trading</td>
+
+                    <td>21 Sep 2026</td>
+
+                    <td>AED 1,950</td>
+
+                    <td>
+                      <span class="status-badge overdue">
+                        Overdue
+                      </span>
+                    </td>
+
+                  </tr>
+
+
+                  <tr>
+
+                    <td>
+                      <strong>#INV-1044</strong>
+                    </td>
+
+                    <td>Prime Technologies</td>
+
+                    <td>20 Sep 2026</td>
+
+                    <td>AED 3,780</td>
+
+                    <td>
+                      <span class="status-badge completed">
+                        Completed
+                      </span>
+                    </td>
+
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+
+          <!-- Recent Activity -->
+
+          <div class="dashboard-card activity-card">
+
+            <div class="card-header">
+
+              <div>
+                <h3>Recent Activity</h3>
+                <p>Latest system updates</p>
+              </div>
+
+            </div>
+
+
+            <div class="activity-list">
+
+
+              <div class="activity-item">
+
+                <div class="activity-avatar">
+                  JD
+                </div>
+
+                <div class="activity-content">
+
+                  <p>
+                    <strong>John Doe</strong>
+                    created a new invoice
+                  </p>
+
+                  <span>5 minutes ago</span>
+
+                </div>
+
+              </div>
+
+
+              <div class="activity-item">
+
+                <div class="activity-avatar">
+                  SA
+                </div>
+
+                <div class="activity-content">
+
+                  <p>
+                    <strong>Sarah Ali</strong>
+                    updated product inventory
+                  </p>
+
+                  <span>24 minutes ago</span>
+
+                </div>
+
+              </div>
+
+
+              <div class="activity-item">
+
+                <div class="activity-avatar">
+                  MK
+                </div>
+
+                <div class="activity-content">
+
+                  <p>
+                    <strong>Michael Khan</strong>
+                    added a new customer
+                  </p>
+
+                  <span>1 hour ago</span>
+
+                </div>
+
+              </div>
+
+
+              <div class="activity-item">
+
+                <div class="activity-avatar">
+                  AR
+                </div>
+
+                <div class="activity-content">
+
+                  <p>
+                    <strong>Ahmed Rahman</strong>
+                    completed a purchase order
+                  </p>
+
+                  <span>2 hours ago</span>
+
+                </div>
+
+              </div>
+
+
+              <div class="activity-item">
+
+                <div class="activity-avatar">
+                  JD
+                </div>
+
+                <div class="activity-content">
+
+                  <p>
+                    <strong>John Doe</strong>
+                    generated monthly report
+                  </p>
+
+                  <span>3 hours ago</span>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= LOW STOCK ================= -->
+
+        <div class="dashboard-card low-stock-card">
+
+          <div class="card-header">
+
+            <div>
+              <h3>Low Stock Alerts</h3>
+              <p>Products that need attention</p>
+            </div>
+
+            <a href="pages/inventory.html">
+              View Inventory
+            </a>
+
+          </div>
+
+
+          <div class="low-stock-grid">
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                LP
+              </div>
+
+              <div class="product-details">
+
+                <strong>Laptop Pro 15</strong>
+
+                <span>
+                  SKU: LP-1501
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+                <strong>4</strong>
+                <span>left</span>
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                KB
+              </div>
+
+              <div class="product-details">
+
+                <strong>Wireless Keyboard</strong>
+
+                <span>
+                  SKU: KB-2402
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+                <strong>7</strong>
+                <span>left</span>
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                MS
+              </div>
+
+              <div class="product-details">
+
+                <strong>Wireless Mouse</strong>
+
+                <span>
+                  SKU: MS-1903
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+                <strong>9</strong>
+                <span>left</span>
+              </div>
+
+            </div>
+
+
+            <div class="product-alert">
+
+              <div class="product-image">
+                MN
+              </div>
+
+              <div class="product-details">
+
+                <strong>24" Monitor</strong>
+
+                <span>
+                  SKU: MN-3204
+                </span>
+
+              </div>
+
+              <div class="stock-count">
+                <strong>3</strong>
+                <span>left</span>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
